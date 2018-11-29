@@ -15,7 +15,7 @@ const Results = ({ error, loading, results }) => (
     ) : (
       results && (
         <div className="display-results">
-          <p style={{ textAlign: "justify" }}>
+          <p>
             Country Code: <strong>{results.CountryCode}</strong>
           </p>
           <p>
@@ -24,6 +24,7 @@ const Results = ({ error, loading, results }) => (
           <p>
             Request Date:{" "}
             <strong>
+              {/* beautifying date output */}
               {moment(
                 results.RequestDate.toString().slice(
                   0,
