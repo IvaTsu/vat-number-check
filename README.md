@@ -1,4 +1,16 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+To see live (deployed) project, use this [link](https://vat-number-check.netlify.com/).
+
+Used:
+
+- [Axios](https://github.com/axios/axios) - for fetching data
+- [momentjs](https://momentjs.com/) - for converting RequestDate to a normal view
+- [prop-types](https://www.npmjs.com/package/prop-types) - for basic types checking
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). So there shouldn't be any problems with installation.
+
+[npm](https://www.npmjs.com/) was used as a package manager.
+
+Run `npm i` to install the dependencies.
 
 ## Available Scripts
 
