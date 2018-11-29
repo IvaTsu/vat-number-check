@@ -31,10 +31,10 @@ Form.defaultProps = {
 Form.propTypes = {
   value: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
-  onClick: PropTypes.func.isRequired,
-  disabled: PropTypes.bool.isRequired,
+  onClick: PropTypes.func.isRequired, // button prop
+  disabled: PropTypes.bool.isRequired, // button prop
   required: PropTypes.bool,
-  loading: PropTypes.bool.isRequired
+  loading: PropTypes.bool.isRequired // button prop
 };
 
 export default Form;
