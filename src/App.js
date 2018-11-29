@@ -49,6 +49,7 @@ class App extends Component {
           value={this.state.inputValue}
           onChange={e => this._updateInputvalue(e)}
           onClick={e => this._getData(e)}
+          onSubmit={e => this._getData(e)}
           disabled={!this.state.inputValue}
           loading={this.state.loading}
         />

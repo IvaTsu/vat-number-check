@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 
 import Button from "./Button";
 
-const Form = ({ value, onChange, onClick, disabled, loading }) => (
-  <form className="form" onSubmit={e => e.preventDefault()}>
+const Form = ({ value, onChange, onClick, onSubmit, disabled, loading }) => (
+  <form className="form" onSubmit={onSubmit}>
     <div className="form-inner">
       <input
         className="form-input"
@@ -34,7 +34,8 @@ Form.propTypes = {
   onClick: PropTypes.func.isRequired, // button prop
   disabled: PropTypes.bool.isRequired, // button prop
   required: PropTypes.bool,
-  loading: PropTypes.bool.isRequired // button prop
+  loading: PropTypes.bool.isRequired, // button prop
+	onSubmit: PropTypes.func.isRequired
 };
 
 export default Form;
