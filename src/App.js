@@ -16,22 +16,24 @@ class App extends Component {
     };
   }
 
+  // watching change of input
   _updateInputvalue = e =>
     this.setState({
       inputValue: e.target.value
     });
 
+  // fetching data on click
   _getData = e => {
     this.setState({ loading: true });
     e.preventDefault();
     axios
       .get(`https://vat.erply.com/numbers?vatNumber=${this.state.inputValue}`)
       .then(response => {
+        // handle response
         this.setState({ results: response.data, loading: false, error: false });
       })
       .catch(error => {
         // handle error
-        console.log(error);
         this.setState({
           error: true,
           loading: false
